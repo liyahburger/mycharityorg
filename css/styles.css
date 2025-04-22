@@ -1,1 +1,286 @@
-* {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Navigation */
+  header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: #f9d342;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+  }
+  
+  .hamburger span {
+    height: 4px;
+    width: 25px;
+    background: white;
+    border-radius: 2px;
+  }
+  
+  /* Mission Banner */
+  .mission-banner {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background: #f2f2f2;
+  }
+  
+  .banner-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .mission-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .mission-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .donate-btn {
+    background: #1e1e1e;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  
+  .donate-btn:hover {
+    background: #333;
+  }
+  
+  /* Mission Details */
+  .mission-details {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .mission-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .mission-details p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Contact Page */
+  .contact-banner {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e3e3e3;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #333;
+  }
+  
+  /* About Page */
+  .about-section {
+    padding: 40px 20px;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-logo {
+    text-align: center;
+  }
+  
+  .about-logo img {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .about-gallery {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-gallery img {
+    width: 30%;
+    margin: 10px;
+  }
+  
+  /* Donations */
+  .donations-banner {
+    text-align: center;
+    background: #f3f3f3;
+    padding: 40px 20px;
+  }
+  
+  .donations-banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .donate-info {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .donate-info .quote {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .donate-info .donate-body p {
+    margin-bottom: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #c22;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e1e1e;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Media Query */
+  @media (max-width: 800px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: #1e1e1e;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      display: none;
+      padding: 20px 0;
+      z-index: 999;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-gallery img {
+      width: 90%;
+    }
+  }
+  

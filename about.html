@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Selective Mutism Association</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="navbar">
+      <div class="logo">SMA</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="donations.html">Donations</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="about-header">
+      <h1>ABOUT US</h1>
+    </div>
+    <div class="about-content">
+      <div class="about-logo">
+        <img src="placeholder-logo.png" alt="SMA Logo" />
+        <h2>SMA</h2>
+        <p class="brand-name">selective mutism association</p>
+      </div>
+      <div class="about-text">
+        <h3>WHO ARE WE?</h3>
+        <p>
+          Founded in [Year], the Selective Mutism Association began as a small group of parents, educators, and professionals dedicated to supporting individuals with selective mutism. Over the years, it has grown into a nationally recognized organization, offering resources, advocacy, and community support for those affected by the condition. Through research-driven initiatives, partnerships with mental health professionals, and public awareness campaigns, SMA has played a pivotal role in fostering understanding and breaking down communication barriers.
+        </p>
+        <p>
+          The triathlon, held at [Event Location], featured a grueling yet rewarding course, including a [distance] swim, [distance] cycling segment, and a final [distance] run. Athletes of all backgrounds participated, but SMA’s team stood out—not only for their athletic performance but also for their inspiring message of inclusion and advocacy.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-gallery">
+      <img src="placeholder-group-run.jpg" alt="Group Run" />
+      <div class="gallery-row">
+        <img src="placeholder-image1.jpg" alt="Group activity" />
+        <img src="placeholder-image2.jpg" alt="Team photo" />
+        <img src="placeholder-image3.jpg" alt="Volunteers" />
+      </div>
+      <div class="gallery-row">
+        <img src="placeholder-image4.jpg" alt="Smiling friends" />
+        <img src="placeholder-image5.jpg" alt="Event cheering" />
+        <img src="placeholder-image6.jpg" alt="Support group" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">SMA</div>
+      <p>
+        1420 Catherine Street, S<br />
+        (123) 456-7890<br />
+        smaassociation@email.com
+      </p>
+      <p>&copy; Selective Mutism Association LTD. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Hamburger Toggle Script -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>

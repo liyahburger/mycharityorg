@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selective Mutism Association</title>
+  <title>Contact Us - SMA</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header & Navigation -->
   <header>
     <div class="navbar">
       <div class="logo">SMA</div>
@@ -32,27 +29,35 @@
     </div>
   </header>
 
-  <!-- Hero Mission Section -->
-  <section class="mission-banner">
-    <img src="placeholder-for-hero-image.jpg" alt="Mission Banner" class="banner-img" />
-    <div class="mission-text">
-      <h1>OUR MISSION</h1>
-      <p>
-        “Our mission is to empower individuals with selective mutism by raising awareness, providing support, and advocating for inclusive environments. Through education, resources, and community outreach, we strive to break barriers, foster understanding, and ensure that every voice—spoken or unspoken—is heard and valued.”
-      </p>
-      <a class="donate-btn" href="donations.html">DONATE TODAY</a>
-    </div>
-  </section>
+  <main class="contact-page">
+    <section class="contact-banner">
+      <h1>GET IN TOUCH WITH US TODAY</h1>
+      <p>We’d love to hear from you. We value our community and appreciate all help and feedback.</p>
+    </section>
 
-  <!-- Mission Statement -->
-  <section class="mission-details">
-    <h2>MAKING A DIFFERENCE…</h2>
-    <p>
-      At the Selective Mutism Association, we are dedicated to advocating for individuals with selective mutism and fostering a world where communication differences are understood and supported. Our core values guide our mission and drive our initiatives.
-    </p>
-  </section>
+    <section class="contact-content">
+      <div class="contact-image">
+        <img src="placeholder-contact.jpg" alt="People Talking" />
+      </div>
+      <div class="contact-quote">
+        <p>
+          “As the SMA team celebrated their triumph, they remained focused on the bigger picture: continuing to advocate, support, and uplift the voices of those with selective mutism. With such a successful event behind them, the organization is already looking ahead to future initiatives, determined to keep shooting for the stars.”
+        </p>
+      </div>
+      <form class="contact-form">
+        <label>Name</label>
+        <input type="text" name="name" required />
+        <label>Phone</label>
+        <input type="tel" name="phone" />
+        <label>Email</label>
+        <input type="email" name="email" required />
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div class="footer-logo">SMA</div>
@@ -65,7 +70,6 @@
     </div>
   </footer>
 
-  <!-- Hamburger Toggle Script -->
   <script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
