@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Selective Mutism Association</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header & Navigation -->
+  <!-- Navigation -->
   <header>
     <div class="navbar">
-      <div class="logo">SMA</div>
+      <div class="logo">
+        <img src="png/Asset 3.png" alt="SMA Logo" />
+      </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="article.html">Article</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -32,38 +32,70 @@
     </div>
   </header>
 
-  <!-- Hero Mission Section -->
-  <section class="mission-banner">
-    <img src="placeholder-for-hero-image.jpg" alt="Mission Banner" class="banner-img" />
-    <div class="mission-text">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/limbo-hu-u_Jg3Wv7h4M-unsplash.jpg" alt="Mission" class="hero-bg" />
+    <div class="hero-overlay">
       <h1>OUR MISSION</h1>
       <p>
-        “Our mission is to empower individuals with selective mutism by raising awareness, providing support, and advocating for inclusive environments. Through education, resources, and community outreach, we strive to break barriers, foster understanding, and ensure that every voice—spoken or unspoken—is heard and valued.”
+        “Our mission is to empower individuals with selective mutism by raising
+        awareness, providing support, and advocating for inclusive environments.
+        Through education, resources, and community outreach, we strive to break
+        barriers, foster understanding, and ensure that every voice—spoken or
+        unspoken—is heard and valued.”
       </p>
       <a class="donate-btn" href="donations.html">DONATE TODAY</a>
     </div>
   </section>
 
-  <!-- Mission Statement -->
-  <section class="mission-details">
-    <h2>MAKING A DIFFERENCE…</h2>
+  <!-- Making a Difference Section -->
+<section class="mission-split">
+  <div class="split-left">
+    <h2>MAKING A DIFFERENCE….</h2>
     <p>
-      At the Selective Mutism Association, we are dedicated to advocating for individuals with selective mutism and fostering a world where communication differences are understood and supported. Our core values guide our mission and drive our initiatives.
+      At the Selective Mutism Association, we are dedicated to advocating for individuals
+      with selective mutism and fostering a world where communication differences are
+      understood and supported. Our core values guide our mission and drive our
+      initiatives.
     </p>
-  </section>
+  </div>
+  <div class="split-right">
+    <img src="png/Asset 3.png" alt="SMA Logo" />
+    <h3>SMA</h3>
+    <p>Selective Mutism Association</p>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
     <div class="footer-container">
-      <div class="footer-logo">SMA</div>
-      <p>
-        1420 Catherine Street, S<br />
-        (123) 456-7890<br />
-        smaassociation@email.com
-      </p>
-      <p>&copy; Selective Mutism Association LTD. All Rights Reserved</p>
+      <!-- Left: Logo -->
+      <div class="footer-logo">
+        <img src="png/Asset 3.png" alt="SMA Logo" />
+      </div>
+  
+      <!-- Center: Navigation Links -->
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donations.html">Donations</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Right: Contact Info -->
+      <div class="footer-contact">
+        <p>1420 Catherine Street, S</p>
+        <p>(123) 456-7890</p>
+        <p>smaassociation@email.com</p>
+        <p>&copy; 2025 Selective Mutism Association LTD. All Rights Reserved</p>
+      </div>
     </div>
   </footer>
+
+  
 
   <!-- Hamburger Toggle Script -->
   <script>
@@ -72,9 +104,4 @@
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("open");
     });
-  </script>
-
-</body>
-</html>
-
-
+  </sc

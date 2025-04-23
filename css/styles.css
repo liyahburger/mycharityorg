@@ -1,20 +1,42 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
+/*Default Elements*/
   
   body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
-    color: #333;
+    color: #520935;
   }
+
+  p{
+    margin-left: 20px;
+  }
+
+  h1{
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  h2{
+    margin-left: 10px;
+    color:#eb8306;
+  }
+
+
+  img{
+    border-radius: 40%;
+  }
+
+  video {
+    width: 800px;
+    height: 360px;
+    margin-left: 280px;
+  }
+ 
   
-  /* Navigation */
+  /* Navigation and Header*/
   header {
-    background-color: #1e1e1e;
+    background-color: #52094b;
     padding: 20px 0;
   }
   
@@ -25,13 +47,25 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    color: white;
+    color: #52094b59;
   }
   
   .logo {
     font-size: 1.8rem;
     font-weight: bold;
     color: #fff;
+    margin-right: 5px;
+  }
+
+  .logo img {
+    height: 150px; 
+    width: auto;
+    display: block;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
   }
   
   .nav-links {
@@ -43,7 +77,7 @@
   .nav-links li a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-weight: 800;
     transition: color 0.3s;
   }
   
@@ -51,6 +85,10 @@
   .nav-links li a.active {
     color: #f9d342;
   }
+
+
+
+
   
   /* Hamburger menu */
   .hamburger {
@@ -66,70 +104,123 @@
     background: white;
     border-radius: 2px;
   }
+
+
+
+
   
-  /* Mission Banner */
-  .mission-banner {
+/* Hero Section*/
+.hero {
     position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6; 
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 0, 87, 0.75); /* Purple semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 60px 20px;
-    background: #f2f2f2;
-  }
-  
-  .banner-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .mission-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .mission-text p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .donate-btn {
-    background: #1e1e1e;
+    padding: 20px;
     color: white;
-    padding: 12px 25px;
-    text-decoration: none;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
     font-weight: 700;
-    border-radius: 4px;
   }
   
-  .donate-btn:hover {
-    background: #333;
+  .hero-overlay p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
   }
   
-  /* Mission Details */
-  .mission-details {
-    padding: 40px 20px;
-    background: #ffffff;
+  .hero-overlay .donate-btn {
+    background-color: #fbb034;
+    color: #a7328c;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .hero-overlay .donate-btn:hover {
+    background-color: #f6a500;
+  }
+
+  
+  
+  .mission-split {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #fff;
+    gap: 40px;
+  }
+  
+  .split-left {
+    flex: 2;
+  }
+  
+  .split-left h2 {
+    color: #f7941d;
+    margin-bottom: 10px;
+  }
+  
+  .split-left p {
+    font-size: 1rem;
+  }
+  
+  .split-right {
+    flex: 1;
     text-align: center;
   }
   
-  .mission-details h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  .split-right img {
+    width: 80px;
+    margin-bottom: 10px;
   }
   
-  .mission-details p {
-    font-size: 1rem;
-    max-width: 800px;
-    margin: auto;
+  .split-right h3 {
+    color: #52094b;
+    margin-bottom: 5px;
   }
+  
+  .split-right p {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
   
   /* Contact Page */
-  .contact-banner {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #e3e3e3;
+
+  .contact-quote{
+    color: #eb8306;
   }
   
   .contact-form {
@@ -148,7 +239,7 @@
   }
   
   .contact-form button {
-    background-color: #1e1e1e;
+    background-color: #eb8306;
     color: white;
     padding: 10px;
     font-weight: bold;
@@ -157,8 +248,31 @@
   }
   
   .contact-form button:hover {
-    background-color: #333;
+    background-color: #f9d342;
   }
+
+  .contact-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        opacity: 0.6; 
+      }
+
+
+  /*Article Page*/
+
+.article-page-p{
+    max-width: 500px;
+}
+  
+
+
+
+
   
   /* About Page */
   .about-section {
@@ -199,12 +313,18 @@
   .about-gallery img {
     width: 30%;
     margin: 10px;
+    border: 5px solid #eb8306;
   }
+
+
+
+
+
   
   /* Donations */
   .donations-banner {
     text-align: center;
-    background: #f3f3f3;
+    background: #eb8306;
     padding: 40px 20px;
   }
   
@@ -230,26 +350,90 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .donate-img{
+   
+  }
   
   .highlight {
     font-weight: bold;
     color: #c22;
   }
+
+
+
   
-  /* Footer */
-  footer {
-    background: #1e1e1e;
+/* Footer*/
+footer {
+    background-color: #52094b;
     color: white;
-    padding: 30px 20px;
-    text-align: center;
+    padding: 40px 20px;
   }
   
-  .footer-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  
+  /* Logo Section */
+  .footer-logo img {
+    height: 150px;
+    width: auto;
+    display: block;
   }
   
+  /* Navigation Links */
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: #fbb034;
+  }
+  
+  /* Contact Information */
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 800px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  
+
+
+
   /* Media Query */
   @media (max-width: 800px) {
     .nav-links {
@@ -257,7 +441,7 @@
       top: 70px;
       left: 0;
       right: 0;
-      background-color: #1e1e1e;
+      background-color: white;
       flex-direction: column;
       align-items: center;
       gap: 20px;
