@@ -564,7 +564,7 @@ footer {
           left: 0;
           width: 100%;
           flex-direction: column;
-          background-color: white;
+          background-color: #520935;
           align-items: center;
           display: none; /* hide by default */
           padding: 20px 0;
